@@ -1,0 +1,19 @@
+# Vercel local link + build output
+.vercel/
+.now/
+
+# Environment / secrets — never commit tokens (IG_TOKEN etc. live only in Vercel env)
+*.env
+.env*
+*token*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Node (none used today, but guard against it)
+node_modules/
+npm-debug.log*

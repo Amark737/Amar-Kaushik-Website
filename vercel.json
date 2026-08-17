@@ -1,0 +1,5 @@
+{
+  "crons": [
+    { "path": "/api/ig-refresh", "schedule": "0 3 1 * *" }
+  ]
+}
