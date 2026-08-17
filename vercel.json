@@ -1,5 +1,13 @@
 {
   "crons": [
     { "path": "/api/ig-refresh", "schedule": "0 3 1 * *" }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.amarkaushik.com" }],
+      "destination": "https://amarkaushik.com/:path*",
+      "permanent": true
+    }
   ]
 }
