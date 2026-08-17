@@ -415,6 +415,17 @@ section.graded .log .ln::before{background:var(--dark);border-color:#a79f90}
 
 /* ================= EXPORT / HIRE ================= */
 #export .opts{border-top:1.5px solid var(--ink)}
+#export .contact{margin-top:clamp(40px,6vh,72px);display:grid;gap:clamp(18px,2.6vh,30px)}
+#export .contact .c-head h3{font-size:clamp(28px,4.4vw,52px);margin:8px 0 6px}
+#export .contact .slugline{color:var(--tally)}
+#export .c-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+#export .c-actions .hbtn{display:inline-flex;align-items:center;gap:9px;font-size:11px;padding:17px 27px}
+#export .hbtn.wa svg{width:18px;height:18px;flex:none}
+#export .hbtn.wa{box-shadow:0 10px 30px rgba(244,123,37,.22)}
+#export .c-meta{display:flex;gap:14px 30px;flex-wrap:wrap;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);border-top:1px solid var(--hair);padding-top:22px;margin-top:6px}
+#export .c-meta a{color:var(--ink-soft);border-bottom:1px solid transparent;transition:.3s}
+#export .c-meta a:hover{color:var(--tally);border-color:var(--tally)}
+@media(max-width:600px){#export .c-actions .hbtn{width:100%;justify-content:center}}
 #export .opt{display:grid;grid-template-columns:70px minmax(0,5fr) minmax(0,6fr) 40px;gap:clamp(14px,3vw,40px);padding:26px 0;border-bottom:1.5px solid var(--ink);align-items:baseline;transition:padding-left .3s ease;position:relative}
 #export .opt:hover{padding-left:16px}
 #export .opt .n{font-family:var(--mono);font-size:11px;color:var(--tally)}
@@ -883,14 +894,14 @@ html{overflow-x:clip}
 <!-- track divider 1 -->
 <div class="track" aria-hidden="true"><span class="t-label">V2 · Meanwhile, elsewhere in the project</span>
   <div class="reel" data-reel>
-    <span class="cell"><img src="assets/img/IMG_8331.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/new_IMG_0780.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_2427.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_8333.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/Capturekraft_-_Clear_Talk_set.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_4914.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/new_IMG_9853.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_7740.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_8331.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/new_IMG_0780.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_2427.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_8333.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/Capturekraft_-_Clear_Talk_set.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_4914.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/new_IMG_9853.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_7740.jpg" alt=""></span>
   </div>
 </div>
 
@@ -920,8 +931,8 @@ html{overflow-x:clip}
         </div>
       </div>
       <div class="duo fade">
-        <div class="frame"><span class="punch">FPV · HIMALAYAN RIVER</span><div class="fx"><img src="assets/img/new_IMG_9853.jpg" alt="Flying FPV in goggles beside a turquoise river"></div><div class="meta"><b>GOGGLES DOWN</b><span>A-CAM</span></div></div>
-        <div class="frame"><span class="punch">SITE OPS</span><div class="fx"><img src="assets/img/IMG_9085.jpg" alt="FPV drone operations on a construction site"></div><div class="meta"><b>400FT, PERMITTED</b><span>B-CAM</span></div></div>
+        <div class="frame"><span class="punch">FPV · HIMALAYAN RIVER</span><div class="fx"><img loading="lazy" src="assets/img/new_IMG_9853.jpg" alt="Flying FPV in goggles beside a turquoise river"></div><div class="meta"><b>GOGGLES DOWN</b><span>A-CAM</span></div></div>
+        <div class="frame"><span class="punch">SITE OPS</span><div class="fx"><img loading="lazy" src="assets/img/IMG_9085.jpg" alt="FPV drone operations on a construction site"></div><div class="meta"><b>400FT, PERMITTED</b><span>B-CAM</span></div></div>
       </div>
     </div>
   </div>
@@ -944,8 +955,8 @@ html{overflow-x:clip}
     </div>
     <div class="clip-grid">
       <div class="duo fade">
-        <div class="frame"><span class="punch">STUDIO</span><div class="fx"><img class="crop-top" src="assets/img/IMG_5500.jpg" alt="Studio portrait with a RED cinema camera"></div><div class="meta"><b>RED, BAREFOOT</b><span>PORTRAIT</span></div></div>
-        <div class="frame"><span class="punch">ON LOCATION</span><div class="fx"><img src="assets/img/IMG_2699.jpg" alt="Compact cinema rig outside a frescoed courtyard"></div><div class="meta"><b>RUN &amp; GUN</b><span>EUROPE</span></div></div>
+        <div class="frame"><span class="punch">STUDIO</span><div class="fx"><img loading="lazy" class="crop-top" src="assets/img/IMG_5500.jpg" alt="Studio portrait with a RED cinema camera"></div><div class="meta"><b>RED, BAREFOOT</b><span>PORTRAIT</span></div></div>
+        <div class="frame"><span class="punch">ON LOCATION</span><div class="fx"><img loading="lazy" src="assets/img/IMG_2699.jpg" alt="Compact cinema rig outside a frescoed courtyard"></div><div class="meta"><b>RUN &amp; GUN</b><span>EUROPE</span></div></div>
       </div>
       <div class="fade">
         <div class="log">
@@ -957,9 +968,9 @@ html{overflow-x:clip}
       </div>
     </div>
     <div class="trio fade">
-      <div class="frame"><div class="fx"><img src="assets/img/Capturekraft_-_Garden_Gallery_set.jpg" alt="Interview set lit with two large softboxes"></div><div class="meta"><b>SHAPED LIGHT</b><span>INTERVIEW SET</span></div></div>
-      <div class="frame"><div class="fx"><img src="assets/img/IMG_5474.jpg" alt="Macro product cinematography rig"></div><div class="meta"><b>MACRO RIG</b><span>PRODUCT</span></div></div>
-      <div class="frame"><div class="fx"><img src="assets/img/Capturekraft_-Afterglow_Lounge_Set.jpg" alt="Lounge set built and lit for mood"></div><div class="meta"><b>BUILT FOR MOOD</b><span>AFTERGLOW</span></div></div>
+      <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/Capturekraft_-_Garden_Gallery_set.jpg" alt="Interview set lit with two large softboxes"></div><div class="meta"><b>SHAPED LIGHT</b><span>INTERVIEW SET</span></div></div>
+      <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/IMG_5474.jpg" alt="Macro product cinematography rig"></div><div class="meta"><b>MACRO RIG</b><span>PRODUCT</span></div></div>
+      <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/Capturekraft_-Afterglow_Lounge_Set.jpg" alt="Lounge set built and lit for mood"></div><div class="meta"><b>BUILT FOR MOOD</b><span>AFTERGLOW</span></div></div>
     </div>
   </div>
 </section>
@@ -967,14 +978,14 @@ html{overflow-x:clip}
 <!-- track divider 2 -->
 <div class="track" aria-hidden="true"><span class="t-label">A1 · Room tone: two metal bands, four instruments</span>
   <div class="reel" data-reel>
-    <span class="cell"><img src="assets/img/IMG_9657.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_0713.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_8331.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_8461.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_0714.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/new_IMG_6326.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_6332.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_8154.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_9657.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_0713.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_8331.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_8461.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_0714.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/new_IMG_6326.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_6332.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_8154.jpg" alt=""></span>
   </div>
 </div>
 
@@ -1072,16 +1083,16 @@ html{overflow-x:clip}
       <a href="https://www.capturekraft.com" target="_blank" rel="noopener" style="color:var(--ink);font-weight:500;border-bottom:1px solid var(--tally)">Capturekraft Studios</a> is a <b style="color:var(--ink);font-weight:500">video production house</b> — not a rental space. Films, commercials, brand campaigns, fashion, product, aerial units and broadcast-grade series work: conceived, shot, and finished by an in-house crew that answers for the result. The purpose-built facility in Bangalore — five sets, a soundproofed stage, an edit suite — is simply where the machine lives. <b style="color:var(--ink);font-weight:500">Crafted. Not captured.</b> The brief arrives once. The film arrives finished.
     </p>
     <div class="sets fade">
-      <div class="frame"><span class="punch">PRODUCTION</span><div class="fx"><img src="assets/img/Capturekraft_studio_space_with_crew.jpg" alt="Full crew rolling on the studio floor"></div><div class="meta"><b>FULL CREW, ROLLING</b><span>IN SESSION</span></div></div>
+      <div class="frame"><span class="punch">PRODUCTION</span><div class="fx"><img loading="lazy" src="assets/img/Capturekraft_studio_space_with_crew.jpg" alt="Full crew rolling on the studio floor"></div><div class="meta"><b>FULL CREW, ROLLING</b><span>IN SESSION</span></div></div>
       <div class="stack2">
-        <div class="frame"><span class="punch">DIRECTION</span><div class="fx"><img src="assets/img/IMG_2427.jpg" alt="Directing on location"></div><div class="meta"><b>ON LOCATION</b><span>EXT · DAY</span></div></div>
-        <div class="frame"><span class="punch">STAGE</span><div class="fx"><img src="assets/img/Capturekarft_-_Amber_Arc_set.jpg" alt="The Amber Arc set rigged and lit from above"></div><div class="meta"><b>RIGGED &amp; LIT</b><span>AMBER ARC</span></div></div>
+        <div class="frame"><span class="punch">DIRECTION</span><div class="fx"><img loading="lazy" src="assets/img/IMG_2427.jpg" alt="Directing on location"></div><div class="meta"><b>ON LOCATION</b><span>EXT · DAY</span></div></div>
+        <div class="frame"><span class="punch">STAGE</span><div class="fx"><img loading="lazy" src="assets/img/Capturekarft_-_Amber_Arc_set.jpg" alt="The Amber Arc set rigged and lit from above"></div><div class="meta"><b>RIGGED &amp; LIT</b><span>AMBER ARC</span></div></div>
       </div>
-      <div class="frame"><span class="punch">ON SET</span><div class="fx"><img src="assets/img/capturekraft_-_Cleartalk_set_bts.jpg" alt="Crew filming a conversation"></div><div class="meta"><b>IN PRODUCTION</b><span>ROLLING</span></div></div>
-      <div class="frame"><span class="punch">SET BUILD</span><div class="fx"><img src="assets/img/capturekraft_=_the_verandah_set.jpg" alt="The verandah set, built in-house"></div><div class="meta"><b>SETS, BUILT IN-HOUSE</b><span>FIVE STANDING</span></div></div>
-      <div class="frame"><span class="punch">SOUND</span><div class="fx"><img src="assets/img/IMG_8331.jpg" alt="Monitoring a mix on studio headphones"></div><div class="meta"><b>MIX &amp; MASTER</b><span>AUDIO POST</span></div></div>
-      <div class="frame"><span class="punch">POST</span><div class="fx"><img src="assets/img/Capturekraft_office.jpg" alt="Edit suite"></div><div class="meta"><b>EDIT &amp; GRADE</b><span>DELIVERY</span></div></div>
-      <div class="frame"><span class="punch">INFRASTRUCTURE</span><div class="fx"><img src="assets/img/Capturekraft_-_Clear_Talk_set.jpg" alt="One of five owned sets"></div><div class="meta"><b>FIVE OWNED SETS</b><span>ONE ROOF</span></div></div>
+      <div class="frame"><span class="punch">ON SET</span><div class="fx"><img loading="lazy" src="assets/img/capturekraft_-_Cleartalk_set_bts.jpg" alt="Crew filming a conversation"></div><div class="meta"><b>IN PRODUCTION</b><span>ROLLING</span></div></div>
+      <div class="frame"><span class="punch">SET BUILD</span><div class="fx"><img loading="lazy" src="assets/img/capturekraft_=_the_verandah_set.jpg" alt="The verandah set, built in-house"></div><div class="meta"><b>SETS, BUILT IN-HOUSE</b><span>FIVE STANDING</span></div></div>
+      <div class="frame"><span class="punch">SOUND</span><div class="fx"><img loading="lazy" src="assets/img/IMG_8331.jpg" alt="Monitoring a mix on studio headphones"></div><div class="meta"><b>MIX &amp; MASTER</b><span>AUDIO POST</span></div></div>
+      <div class="frame"><span class="punch">POST</span><div class="fx"><img loading="lazy" src="assets/img/Capturekraft_office.jpg" alt="Edit suite"></div><div class="meta"><b>EDIT &amp; GRADE</b><span>DELIVERY</span></div></div>
+      <div class="frame"><span class="punch">INFRASTRUCTURE</span><div class="fx"><img loading="lazy" src="assets/img/Capturekraft_-_Clear_Talk_set.jpg" alt="One of five owned sets"></div><div class="meta"><b>FIVE OWNED SETS</b><span>ONE ROOF</span></div></div>
     </div>
     <p class="fade" style="margin-top:clamp(26px,4vh,40px)">
       <a class="hbtn solid" href="https://www.capturekraft.com" target="_blank" rel="noopener" style="display:inline-block">Visit capturekraft.com&nbsp;&nbsp;↗</a>
@@ -1150,7 +1161,7 @@ html{overflow-x:clip}
         </div>
       </div>
       <div class="fade" style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap">
-        <div class="frame" style="flex:1;min-width:180px"><span class="punch">CLIENT: A COUNTRY</span><div class="fx"><img src="assets/img/IMG_7041.jpg" alt="Valletta harbour, Malta"></div><div class="meta"><b>VALLETTA, ON RECCE</b><span>MALTA</span></div></div>
+        <div class="frame" style="flex:1;min-width:180px"><span class="punch">CLIENT: A COUNTRY</span><div class="fx"><img loading="lazy" src="assets/img/IMG_7041.jpg" alt="Valletta harbour, Malta"></div><div class="meta"><b>VALLETTA, ON RECCE</b><span>MALTA</span></div></div>
       </div>
     </div>
   </div>
@@ -1194,14 +1205,14 @@ html{overflow-x:clip}
 <!-- track divider 3 -->
 <div class="track" aria-hidden="true"><span class="t-label">V3 · Locations scouted for no client at all</span>
   <div class="reel" data-reel>
-    <span class="cell"><img src="assets/img/IMG_1253.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/new_IMG_1099.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_3323.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/new_IMG_4949.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_2687.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_1049.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/new_IMG_2868.jpg" alt=""></span>
-    <span class="cell"><img src="assets/img/IMG_6909.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_1253.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/new_IMG_1099.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_3323.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/new_IMG_4949.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_2687.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_1049.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/new_IMG_2868.jpg" alt=""></span>
+    <span class="cell"><img loading="lazy" src="assets/img/IMG_6909.jpg" alt=""></span>
   </div>
 </div>
 
@@ -1223,25 +1234,25 @@ html{overflow-x:clip}
     <p class="fade" style="max-width:60ch;font-size:16px;line-height:1.9;color:var(--ink-soft);margin-bottom:clamp(38px,5vh,60px)">Twenty-three countries, usually solo, always with a backpack. Some frames were shoots and scouts. Most were just going to stand in front of art, light, mountains and cities — <b style="color:var(--ink);font-weight:500">field research for a curiosity that never files expenses.</b></p>
     <div class="wall fade">
       <div class="wcol">
-        <div class="frame"><div class="fx"><img src="assets/img/IMG_1253.jpg" alt="Lisbon rooftops at sunset"></div><div class="meta"><b>LISBON</b><span>GOLDEN HOUR</span></div></div>
-        <div class="frame"><div class="fx"><img src="assets/img/new_IMG_4949.jpg" alt="Starfield Library, Seoul"></div><div class="meta"><b>SEOUL</b><span>STARFIELD LIBRARY</span></div></div>
-        <div class="frame"><div class="fx"><img src="assets/img/new_IMG_1099.jpg" alt="Frozen high plain at sunset"></div><div class="meta"><b>4,000M</b><span>FROZEN PLAIN</span></div></div>
-        <div class="frame"><div class="fx"><img src="assets/img/new_IMG_2868.jpg" alt="Rhine valley overlook"></div><div class="meta"><b>THE RHINE</b><span>FROM THE RAMPARTS</span></div></div>
-        <div class="frame"><div class="fx"><img src="assets/img/IMG_1049.jpg" alt="Cathedral rose window"></div><div class="meta"><b>CATHEDRAL LIGHT</b><span>LOOK UP</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/IMG_1253.jpg" alt="Lisbon rooftops at sunset"></div><div class="meta"><b>LISBON</b><span>GOLDEN HOUR</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/new_IMG_4949.jpg" alt="Starfield Library, Seoul"></div><div class="meta"><b>SEOUL</b><span>STARFIELD LIBRARY</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/new_IMG_1099.jpg" alt="Frozen high plain at sunset"></div><div class="meta"><b>4,000M</b><span>FROZEN PLAIN</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/new_IMG_2868.jpg" alt="Rhine valley overlook"></div><div class="meta"><b>THE RHINE</b><span>FROM THE RAMPARTS</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/IMG_1049.jpg" alt="Cathedral rose window"></div><div class="meta"><b>CATHEDRAL LIGHT</b><span>LOOK UP</span></div></div>
       </div>
       <div class="wcol">
-        <div class="frame"><div class="fx"><img src="assets/img/new_IMG_0780.jpg" alt="Before a glacier wall"></div><div class="meta"><b>GLACIER COUNTRY</b><span>ON FOOT</span></div></div>
-        <div class="frame"><div class="fx"><img src="assets/img/IMG_4914.jpg" alt="Brooklyn Bridge"></div><div class="meta"><b>NEW YORK</b><span>LOOKING UP</span></div></div>
-        <div class="frame"><div class="fx"><img src="assets/img/IMG_3484.jpg" alt="Canal bridge in Bruges"></div><div class="meta"><b>BRUGES</b><span>ON FOOT</span></div></div>
-        <div class="frame"><div class="fx"><img src="assets/img/IMG_1466.jpg" alt="Inside Hagia Sophia"></div><div class="meta"><b>ISTANBUL</b><span>HAGIA SOPHIA</span></div></div>
-        <div class="frame"><div class="fx"><img src="assets/img/1457e54c-4fd4-4b50-ad17-148faeca5fbb.jpg" alt="Night skyline"></div><div class="meta"><b>CITY NIGHTS</b><span>SOMEWHERE</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/new_IMG_0780.jpg" alt="Before a glacier wall"></div><div class="meta"><b>GLACIER COUNTRY</b><span>ON FOOT</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/IMG_4914.jpg" alt="Brooklyn Bridge"></div><div class="meta"><b>NEW YORK</b><span>LOOKING UP</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/IMG_3484.jpg" alt="Canal bridge in Bruges"></div><div class="meta"><b>BRUGES</b><span>ON FOOT</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/IMG_1466.jpg" alt="Inside Hagia Sophia"></div><div class="meta"><b>ISTANBUL</b><span>HAGIA SOPHIA</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/1457e54c-4fd4-4b50-ad17-148faeca5fbb.jpg" alt="Night skyline"></div><div class="meta"><b>CITY NIGHTS</b><span>SOMEWHERE</span></div></div>
       </div>
       <div class="wcol">
-        <div class="frame"><div class="fx"><img src="assets/img/IMG_3323.jpg" alt="Seine and Eiffel Tower"></div><div class="meta"><b>PARIS</b><span>BY RIVER</span></div></div>
-        <div class="frame"><div class="fx"><img src="assets/img/IMG_2687.jpg" alt="Himalayan monastery in snow"></div><div class="meta"><b>THE HIMALAYAS</b><span>FOR SILENCE</span></div></div>
-        <div class="frame"><div class="fx"><img src="assets/img/IMG_7456.jpg" alt="Mount Etna slopes"></div><div class="meta"><b>MOUNT ETNA</b><span>UP CLOSE</span></div></div>
-        <div class="frame"><div class="fx"><img src="assets/img/IMG_1204.jpg" alt="Castle ramparts, golden sky"></div><div class="meta"><b>OLD RAMPARTS</b><span>LAST LIGHT</span></div></div>
-        <div class="frame"><div class="fx"><img src="assets/img/IMG_6909.jpg" alt="Clifftop sea sunset"></div><div class="meta"><b>MALTA</b><span>CLIFF EDGE</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/IMG_3323.jpg" alt="Seine and Eiffel Tower"></div><div class="meta"><b>PARIS</b><span>BY RIVER</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/IMG_2687.jpg" alt="Himalayan monastery in snow"></div><div class="meta"><b>THE HIMALAYAS</b><span>FOR SILENCE</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/IMG_7456.jpg" alt="Mount Etna slopes"></div><div class="meta"><b>MOUNT ETNA</b><span>UP CLOSE</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/IMG_1204.jpg" alt="Castle ramparts, golden sky"></div><div class="meta"><b>OLD RAMPARTS</b><span>LAST LIGHT</span></div></div>
+        <div class="frame"><div class="fx"><img loading="lazy" src="assets/img/IMG_6909.jpg" alt="Clifftop sea sunset"></div><div class="meta"><b>MALTA</b><span>CLIFF EDGE</span></div></div>
       </div>
     </div>
   </div>
@@ -1263,14 +1274,14 @@ html{overflow-x:clip}
       </div>
     </div>
     <div class="trio fade" style="margin-top:0">
-      <div class="frame"><span class="punch">A1 · MUSIC</span><div class="fx"><img src="assets/img/IMG_0715.jpg" alt="At a festival main stage"></div><div class="meta"><b>4 INSTRUMENTS, 2 METAL BANDS</b><span>DEATH GTR · THRASH DRUMS</span></div></div>
-      <div class="frame"><span class="punch">V4 · DIRT</span><div class="fx"><img src="assets/img/new_IMG_3308.jpg" alt="Royal Enfield in the high Himalayas"></div><div class="meta"><b>LADAKH, BY ENFIELD</b><span>HIGH PASSES</span></div></div>
-      <div class="frame"><span class="punch">V4 · MX</span><div class="fx"><img src="assets/img/IMG_8333.jpg" alt="Motocross gear and helmet"></div><div class="meta"><b>MOTOCROSS SUNDAYS</b><span>FALLING, CURRICULUM</span></div></div>
+      <div class="frame"><span class="punch">A1 · MUSIC</span><div class="fx"><img loading="lazy" src="assets/img/IMG_0715.jpg" alt="At a festival main stage"></div><div class="meta"><b>4 INSTRUMENTS, 2 METAL BANDS</b><span>DEATH GTR · THRASH DRUMS</span></div></div>
+      <div class="frame"><span class="punch">V4 · DIRT</span><div class="fx"><img loading="lazy" src="assets/img/new_IMG_3308.jpg" alt="Royal Enfield in the high Himalayas"></div><div class="meta"><b>LADAKH, BY ENFIELD</b><span>HIGH PASSES</span></div></div>
+      <div class="frame"><span class="punch">V4 · MX</span><div class="fx"><img loading="lazy" src="assets/img/IMG_8333.jpg" alt="Motocross gear and helmet"></div><div class="meta"><b>MOTOCROSS SUNDAYS</b><span>FALLING, CURRICULUM</span></div></div>
     </div>
     <div class="trio fade">
-      <div class="frame"><span class="punch">V5 · SNOW</span><div class="fx"><img src="assets/img/IMG_7740.jpg" alt="Skiing on a snowy summit"></div><div class="meta"><b>ALPINE SKIING</b><span>ANY EXCUSE, STEEP</span></div></div>
-      <div class="frame"><span class="punch">V5 · 4X4</span><div class="fx"><img src="assets/img/new_IMG_9103.jpg" alt="Expedition 4x4 in a forest"></div><div class="meta"><b>EXPEDITIONS, ASSEMBLED</b><span>ENGINEERING + MUD</span></div></div>
-      <div class="frame"><span class="punch">V6 · QUIET</span><div class="fx"><img src="assets/img/IMG_8154.jpg" alt="In a river with a Labrador"></div><div class="meta"><b>RIVERS &amp; ONE GOOD DOG</b><span>RECHARGE PROTOCOL</span></div></div>
+      <div class="frame"><span class="punch">V5 · SNOW</span><div class="fx"><img loading="lazy" src="assets/img/IMG_7740.jpg" alt="Skiing on a snowy summit"></div><div class="meta"><b>ALPINE SKIING</b><span>ANY EXCUSE, STEEP</span></div></div>
+      <div class="frame"><span class="punch">V5 · 4X4</span><div class="fx"><img loading="lazy" src="assets/img/new_IMG_9103.jpg" alt="Expedition 4x4 in a forest"></div><div class="meta"><b>EXPEDITIONS, ASSEMBLED</b><span>ENGINEERING + MUD</span></div></div>
+      <div class="frame"><span class="punch">V6 · QUIET</span><div class="fx"><img loading="lazy" src="assets/img/IMG_8154.jpg" alt="In a river with a Labrador"></div><div class="meta"><b>RIVERS &amp; ONE GOOD DOG</b><span>RECHARGE PROTOCOL</span></div></div>
     </div>
   </div>
 </section>
@@ -1324,6 +1335,26 @@ html{overflow-x:clip}
       <div class="opt"><span class="n">EXP/05</span><h3>Experience &amp; booth design</h3><p>Trade-show booths and brand spaces — engineered, designed, delivered, standing upright.</p><span class="go">→</span></div>
       <div class="opt"><span class="n">EXP/06</span><h3>Creative direction</h3><p>Teams led kindly, taste held firmly, deadlines met suspiciously often.</p><span class="go">→</span></div>
     </div>
+    <div class="contact fade" id="contact">
+      <div class="c-head">
+        <p class="slugline">EXT. THE NEXT PROJECT — YOUR MOVE</p>
+        <h3>Let's <em>roll</em>.</h3>
+        <p class="action">Bring the brief. Fastest reply is a WhatsApp.</p>
+      </div>
+      <div class="c-actions">
+        <a class="hbtn solid wa" href="https://wa.me/919731179546?text=Hi%20Amar%20%E2%80%94%20saw%20amarkaushik.com.%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Message Amar on WhatsApp">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 27l6.2-1.6c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2C6.6 9.8 10.8 5.6 16 5.6S25.4 9.8 25.4 15 21.2 24.8 16 24.8zm5.3-6.9c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          WhatsApp&nbsp;&nbsp;·&nbsp;&nbsp;+91 97311 79546
+        </a>
+        <a class="hbtn" href="mailto:create@capturekraft.com">✉&nbsp;&nbsp;create@capturekraft.com</a>
+      </div>
+      <div class="c-meta">
+        <span>AMAR KAUSHIK · FOUNDER, CAPTUREKRAFT STUDIOS</span>
+        <span>BENGALURU, INDIA</span>
+        <span><a href="tel:+919731179546">+91 97311 79546</a></span>
+        <span><a href="https://www.capturekraft.com" target="_blank" rel="noopener">capturekraft.com&nbsp;↗</a></span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1331,7 +1362,7 @@ html{overflow-x:clip}
 <section id="deleted">
   <div class="wrap">
     <div class="inner">
-      <img src="assets/img/IMG_8155.jpg" alt="In a river, holding a very good Labrador">
+      <img loading="lazy" src="assets/img/IMG_8155.jpg" alt="In a river, holding a very good Labrador">
       <div>
         <p class="mono" style="font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--tally);margin-bottom:14px">DELETED SCENE — FOUND VIA THE GOLD MARKER</p>
         <h3>The real executive producer.</h3>
@@ -1406,13 +1437,13 @@ html{overflow-x:clip}
     <div class="fine">…and at least one secret isn't listed. Check the timeline for gold.</div>
   </div>
 </div>
-<div id="lightbox"><img src="" alt=""></div>
+<div id="lightbox"><img loading="lazy" src="" alt=""></div>
 <div id="outtakes">
   <div class="grid">
-    <img src="assets/img/IMG_0713.jpg" alt="Festival crowd">
-    <img src="assets/img/C7D64A0D-614A-442D-A94E-322E85BC88E5.jpg" alt="Cream suit mirror selfie">
-    <img src="assets/img/IMG_5239.jpg" alt="Night car selfie">
-    <img src="assets/img/IMG_5853.jpg" alt="Fire pit with friends">
+    <img loading="lazy" src="assets/img/IMG_0713.jpg" alt="Festival crowd">
+    <img loading="lazy" src="assets/img/C7D64A0D-614A-442D-A94E-322E85BC88E5.jpg" alt="Cream suit mirror selfie">
+    <img loading="lazy" src="assets/img/IMG_5239.jpg" alt="Night car selfie">
+    <img loading="lazy" src="assets/img/IMG_5853.jpg" alt="Fire pit with friends">
   </div>
   <p class="note">DIRECTOR'S CUT — OUTTAKES · CLICK ANYWHERE TO CLOSE</p>
 </div>
