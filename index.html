@@ -1185,18 +1185,18 @@ html{overflow-x:clip}
   </div>
   <div class="fade">
     <div class="mstrip" id="mstrip">
-      <figure class="mv"><span class="tcin">R-01</span><video src="assets/video/IMG_2424.mp4" muted loop playsinline preload="metadata"></video><figcaption>GIMBAL RUN — FASHION FILM</figcaption></figure>
-      <figure class="mv"><span class="tcin">R-02</span><video src="assets/video/IMG_7548.mp4" muted loop playsinline preload="metadata"></video><figcaption>CREEK SHOOT — COMPOSING</figcaption></figure>
-      <figure class="mv"><span class="tcin">R-03</span><video src="assets/video/IMG_9205.mp4" muted loop playsinline preload="metadata"></video><figcaption>CORPORATE INTERVIEW — ON SET</figcaption></figure>
-      <figure class="mv"><span class="tcin">R-04</span><video src="assets/video/IMG_2432.mp4" muted loop playsinline preload="metadata"></video><figcaption>FOREST EDITORIAL</figcaption></figure>
-      <figure class="mv"><span class="tcin">R-05</span><video src="assets/video/IMG_7393.mp4" muted loop playsinline preload="metadata"></video><figcaption>SOUNDSTAGE — RIGGING</figcaption></figure>
-      <figure class="mv"><span class="tcin">R-06</span><video src="assets/video/IMG_7534.mp4" muted loop playsinline preload="metadata"></video><figcaption>RIVER FRAMES — TALENT</figcaption></figure>
-      <figure class="mv"><span class="tcin">R-07</span><video src="assets/video/IMG_0058.mp4" muted loop playsinline preload="metadata"></video><figcaption>STUDIO SESSION — STILLS</figcaption></figure>
-      <figure class="mv"><span class="tcin">R-08</span><video src="assets/video/IMG_6379.mp4" muted loop playsinline preload="metadata"></video><figcaption>MONSOON RIDE — WESTERN GHATS</figcaption></figure>
-      <figure class="mv"><span class="tcin">R-09</span><video src="assets/video/IMG_7547.mp4" muted loop playsinline preload="metadata"></video><figcaption>LOCATION WORK — DIRECTION</figcaption></figure>
-      <figure class="mv"><span class="tcin">R-10</span><video src="assets/video/IMG_7787.mp4" muted loop playsinline preload="metadata"></video><figcaption>SNOW LOG — STORM DAY</figcaption></figure>
-      <figure class="mv"><span class="tcin">R-11</span><video src="assets/video/DJI_20260129133302_0015_D.mp4" muted loop playsinline preload="metadata"></video><figcaption>CORPORATE SET — WIRELESS VILLAGE</figcaption></figure>
-      <figure class="mv"><span class="tcin">R-12</span><video src="assets/video/IMG_9583.mp4" muted loop playsinline preload="metadata"></video><figcaption>EDITING AT 38,000 FT</figcaption></figure>
+      <figure class="mv"><span class="tcin">R-01</span><video src="assets/video/IMG_2424.mp4" muted loop playsinline autoplay preload="metadata"></video><figcaption>GIMBAL RUN — FASHION FILM</figcaption></figure>
+      <figure class="mv"><span class="tcin">R-02</span><video src="assets/video/IMG_7548.mp4" muted loop playsinline autoplay preload="metadata"></video><figcaption>CREEK SHOOT — COMPOSING</figcaption></figure>
+      <figure class="mv"><span class="tcin">R-03</span><video src="assets/video/IMG_9205.mp4" muted loop playsinline autoplay preload="metadata"></video><figcaption>CORPORATE INTERVIEW — ON SET</figcaption></figure>
+      <figure class="mv"><span class="tcin">R-04</span><video src="assets/video/IMG_2432.mp4" muted loop playsinline autoplay preload="metadata"></video><figcaption>FOREST EDITORIAL</figcaption></figure>
+      <figure class="mv"><span class="tcin">R-05</span><video src="assets/video/IMG_7393.mp4" muted loop playsinline autoplay preload="metadata"></video><figcaption>SOUNDSTAGE — RIGGING</figcaption></figure>
+      <figure class="mv"><span class="tcin">R-06</span><video src="assets/video/IMG_7534.mp4" muted loop playsinline autoplay preload="metadata"></video><figcaption>RIVER FRAMES — TALENT</figcaption></figure>
+      <figure class="mv"><span class="tcin">R-07</span><video src="assets/video/IMG_0058.mp4" muted loop playsinline autoplay preload="metadata"></video><figcaption>STUDIO SESSION — STILLS</figcaption></figure>
+      <figure class="mv"><span class="tcin">R-08</span><video src="assets/video/IMG_6379.mp4" muted loop playsinline autoplay preload="metadata"></video><figcaption>MONSOON RIDE — WESTERN GHATS</figcaption></figure>
+      <figure class="mv"><span class="tcin">R-09</span><video src="assets/video/IMG_7547.mp4" muted loop playsinline autoplay preload="metadata"></video><figcaption>LOCATION WORK — DIRECTION</figcaption></figure>
+      <figure class="mv"><span class="tcin">R-10</span><video src="assets/video/IMG_7787.mp4" muted loop playsinline autoplay preload="metadata"></video><figcaption>SNOW LOG — STORM DAY</figcaption></figure>
+      <figure class="mv"><span class="tcin">R-11</span><video src="assets/video/DJI_20260129133302_0015_D.mp4" muted loop playsinline autoplay preload="metadata"></video><figcaption>CORPORATE SET — WIRELESS VILLAGE</figcaption></figure>
+      <figure class="mv"><span class="tcin">R-12</span><video src="assets/video/IMG_9583.mp4" muted loop playsinline autoplay preload="metadata"></video><figcaption>EDITING AT 38,000 FT</figcaption></figure>
     </div>
   </div>
   <div class="wrap"><p class="strip-note fade">— DRAG SIDEWAYS · EVERYTHING PLAYS AS IT PASSES THE PLAYHEAD</p></div>
@@ -1797,7 +1797,11 @@ let sdown=false,sx=0,sl=0;
 strip.addEventListener('pointerdown',e=>{sdown=true;sx=e.clientX;sl=strip.scrollLeft;strip.setPointerCapture(e.pointerId);});
 strip.addEventListener('pointermove',e=>{if(sdown)strip.scrollLeft=sl-(e.clientX-sx);});
 ['pointerup','pointercancel'].forEach(ev=>strip.addEventListener(ev,()=>sdown=false));
-const vio=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target.querySelector('video');if(!v)return;e.isIntersecting?v.play().catch(()=>{}):v.pause();}),{threshold:.3});
+const vio=new IntersectionObserver(es=>es.forEach(e=>{
+  const v=e.target.querySelector('video');if(!v)return;
+  if(e.isIntersecting){const p=v.play();if(p&&p.catch)p.catch(()=>{});}
+  else if(!v.paused)v.pause();
+}),{threshold:0,rootMargin:'100px 250px'});   // play as soon as any pixel shows (with lead margin for the horizontal strip); don't fight the autoplay attribute
 document.querySelectorAll('.mv,.vprint').forEach(m=>vio.observe(m));
 
 /* ============ REELS: duplicate for loop ============ */
