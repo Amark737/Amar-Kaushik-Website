@@ -4,9 +4,9 @@
   ],
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [{ "type": "host", "value": "www.amarkaushik.com" }],
-      "destination": "https://amarkaushik.com/:path*",
+      "destination": "https://amarkaushik.com/$1",
       "permanent": true
     }
   ]
